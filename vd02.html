@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Пользователи системы</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #ffffff;
+      font-size: 2.5rem;
+    }
+
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .user-card {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      width: calc(25% - 20px); /* 4 в ряд с отступами */
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    @media (max-width: 1200px) {
+      .user-card {
+        width: calc(33.33% - 20px);
+      }
+    }
+
+    @media (max-width: 900px) {
+      .user-card {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .user-card {
+        width: 100%;
+      }
+    }
+
+    .user-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .user-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #6c63ff;
+      margin-bottom: 15px;
+      transition: border-color 0.3s ease;
+    }
+
+    .user-photo:hover {
+      border-color: #9b87f5;
+    }
+
+    .user-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+
+    .user-email,
+    .user-info {
+      font-size: 0.95rem;
+      margin: 6px 0;
+      color: #bbbbbb;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Пользователи системы</h1>
+
+  <div class="cards-container">
+
+    <div class="user-card">
+      <img src="https://i.pravatar.cc/100?img=1" alt="Фото пользователя" class="user-photo">
+      <div class="user-name">Александр Петров</div>
+      <div class="user-email">alex.petrov@example.com</div>
+      <div class="user-info">Дата рождения: 15.08.1990</div>
+      <div class="user-info">Город: Москва</div>
+    </div>
+
+    <div class="user-card">
+      <img src="https://i.pravatar.cc/100?img=2" alt="Фото пользователя" class="user-photo">
+      <div class="user-name">Мария Смирнова</div>
+      <div class="user-email">maria.smirnova@example.com</div>
+      <div class="user-info">Дата рождения: 23.03.1995</div>
+      <div class="user-info">Город: Санкт-Петербург</div>
+    </div>
+
+    <div class="user-card">
+      <img src="https://i.pravatar.cc/100?img=3" alt="Фото пользователя" class="user-photo">
+      <div class="user-name">Дмитрий Иванов</div>
+      <div class="user-email">dmitry.ivanov@example.com</div>
+      <div class="user-info">Дата рождения: 07.12.1988</div>
+      <div class="user-info">Город: Новосибирск</div>
+    </div>
+
+    <div class="user-card">
+      <img src="https://i.pravatar.cc/100?img=4" alt="Фото пользователя" class="user-photo">
+      <div class="user-name">Екатерина Козлова</div>
+      <div class="user-email">ekaterina.kozlova@example.com</div>
+      <div class="user-info">Дата рождения: 12.05.1992</div>
+      <div class="user-info">Город: Екатеринбург</div>
+    </div>
+
+    <div class="user-card">
+      <img src="https://i.pravatar.cc/100?img=5" alt="Фото пользователя" class="user-photo">
+      <div class="user-name">Анна Волкова</div>
+      <div class="user-email">anna.volkova@example.com</div>
+      <div class="user-info">Дата рождения: 03.11.1996</div>
+      <div class="user-info">Город: Казань</div>
+    </div>
+
+    <div class="user-card">
+      <img src="https://i.pravatar.cc/100?img=6" alt="Фото пользователя" class="user-photo">
+      <div class="user-name">Иван Соколов</div>
+      <div class="user-email">ivan.sokolov@example.com</div>
+      <div class="user-info">Дата рождения: 29.09.1985</div>
+      <div class="user-info">Город: Омск</div>
+    </div>
+
+    <div class="user-card">
+      <img src="https://i.pravatar.cc/100?img=7" alt="Фото пользователя" class="user-photo">
+      <div class="user-name">Ольга Михайлова</div>
+      <div class="user-email">olga.mikhailova@example.com</div>
+      <div class="user-info">Дата рождения: 18.04.1991</div>
+      <div class="user-info">Город: Челябинск</div>
+    </div>
+
+    <div class="user-card">
+      <img src="https://i.pravatar.cc/100?img=8" alt="Фото пользователя" class="user-photo">
+      <div class="user-name">Сергей Лебедев</div>
+      <div class="user-email">sergey.lebedev@example.com</div>
+      <div class="user-info">Дата рождения: 02.07.1987</div>
+      <div class="user-info">Город: Уфа</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
